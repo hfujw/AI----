@@ -1,0 +1,20 @@
+test_cases:
+  - id: "medical_metformin"
+    question: "二甲双胍有什么副作用？"
+    context: "二甲双胍是2型糖尿病的一线用药。常见副作用包括恶心、腹泻和腹部不适。罕见但严重的副作用包括乳酸性酸中毒。"
+    expected_answer: "常见的副作用有恶心、腹泻和腹部不适。"
+    expected_key_points: ["恶心", "腹泻", "腹部不适", "乳酸性酸中毒"]
+    thresholds:
+      faithfulness: 0.7
+      relevance: 0.6
+      completeness: 0.5
+
+  - id: "history_ww2"
+    question: "二战什么时候结束的？"
+    context: "第二次世界大战于1945年结束。欧洲战场于1945年5月8日结束，太平洋战场于1945年9月2日结束。"
+    expected_answer: "二战于1945年结束。"
+    expected_key_points: ["1945", "5月8日", "9月2日"]
+    thresholds:
+      faithfulness: 0.7
+      relevance: 0.6
+      completeness: 0.5
